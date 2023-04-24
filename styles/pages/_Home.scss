@@ -1,0 +1,16 @@
+.main {
+  min-height: 90vh;
+  color: $color-secondary;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  & .home_text {
+    margin-left: 160px;
+    margin-bottom: 130px;
+    &_presentation {
+      margin-bottom: 45px;
+    }
+  }
+}
+
