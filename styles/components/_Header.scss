@@ -1,5 +1,14 @@
-.header_text {
-    &_presentation {
+.header {
+  min-height: 91vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  margin-bottom: 80px;
+}
+.header__text {
+    &__presentation {
       position: absolute;
       bottom: 260px;
       left: 200px;
@@ -17,7 +26,7 @@
         font-weight: 400;
       }
     }
-    &_quote { 
+    &__quote { 
       position: absolute;
       bottom: 150px;
       left: 200px;

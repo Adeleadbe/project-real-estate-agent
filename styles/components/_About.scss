@@ -1,0 +1,36 @@
+.about {
+    min-height: 90vh;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 140px;
+    &__story {
+        margin-top: 20px;
+        width: 50%;
+        text-align: center;
+        & h2 {
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 38px;
+            margin-bottom: 55px;
+            color: $color-tertiary;
+        }
+        & p {
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+    }
+    &__background {
+        background-color: $color-tertiary;
+        width: 400px;
+        height: 600px;
+        border-radius: 5%;
+        position: relative;
+    }
+    &__picture {
+        position: absolute;
+    }
+}
