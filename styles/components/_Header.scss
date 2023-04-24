@@ -1,0 +1,27 @@
+.header_text {
+    &_presentation {
+      position: absolute;
+      bottom: 260px;
+      left: 200px;
+      margin-bottom: 45px;
+      & h1 {
+        font-size: 40px;
+        font-weight: 500;
+        & em {
+          font-style: normal;
+          color: $color-tertiary;
+        }
+      }
+      & h2 {
+        font-size: 28px;
+        font-weight: 400;
+      }
+    }
+    &_quote { 
+      position: absolute;
+      bottom: 150px;
+      left: 200px;
+      font-size: 28px;
+      font-weight: 500;
+    }
+  }
