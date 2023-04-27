@@ -1,4 +1,4 @@
-import pictureBryan from "@/public/assets/pictureBryan.jpg"
+import pictureBryan from "@/public/assets/pictureBryan.png"
 import Head from "next/head";
 import Header from "@/components/Header/Header";
 import About from "@/components/About/About";

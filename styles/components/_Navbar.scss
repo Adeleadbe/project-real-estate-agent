@@ -2,19 +2,31 @@
     background-color: $color-primary;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     width: 90%;
     margin: auto;
-    margin-top: 30px;
-    & strong {
-        font-size: 38px;
+    height: 100px;
+    strong {
+        font-size: 34px;
         font-weight: 400;
+        padding-bottom: 15px;
     }
-    & a {
+    a {
         margin-left: 30px;
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 400;
         color: $color-secondary;
     }
 }
+
+@include laptop {
+    .navbar {
+        strong {
+            font-size: 30px;
+        }
+        a {
+            font-size: 15px;
+        }
+    }
+  }
 
