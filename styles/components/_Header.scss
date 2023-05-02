@@ -4,7 +4,6 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
-  margin-bottom: 80px;
   position: relative;
 }
 
@@ -47,5 +46,20 @@
     }
     .header__picture {
       max-width: 400px;
+    }
+  }
+
+  @include tablet {
+    .header {
+      background-color: pink;
+      position: static;
+      flex-direction: column-reverse;
+      align-items: center;
+      &__text {
+        position: static;
+        img {
+          
+        }
+      }
     }
   }

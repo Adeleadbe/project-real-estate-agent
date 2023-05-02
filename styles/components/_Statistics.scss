@@ -1,13 +1,14 @@
 .statistics {
     width: 85%;
     margin: auto;
+    margin-top: 28px;
     h2 {
         text-align: center;
         font-size: 35px;
         text-transform: uppercase;
         color: $color-tertiary;
         font-weight: 500;
-        margin-bottom: 55px;
+        margin-bottom: 50px;
     }
     &-explanation {
         font-size: 24px;
@@ -21,7 +22,23 @@
             }
             h3 {
                 font-weight: 700;
+                margin-bottom: 9px;
             }
+        }
+    }
+}
+
+@include laptop {
+    .statistics {
+        h2 {
+            font-size: 30px;
+            margin-bottom: 28px;
+        }
+        h3 {
+            font-size: 25px;
+        }
+        p {
+            font-size: 22px;
         }
     }
 }

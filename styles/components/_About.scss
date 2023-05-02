@@ -5,11 +5,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 140px;
+    align-items: center;
+    margin-top: 10px;
     &__story {
         margin-top: 20px;
         width: 50%;
         text-align: center;
+        width: 55%;
         & h2 {
             text-transform: uppercase;
             font-weight: 500;
@@ -32,5 +34,30 @@
     }
     &__picture {
         position: absolute;
+    }
+}
+
+@include laptop {
+    .about {
+        min-height: 90vh;
+        align-items: flex-start;
+        margin-top: 60px;
+        &__story {
+            margin-right: 10px;
+            h2 {
+                font-size: 30px;
+            }
+            p {
+                font-size: 17px;
+            }
+        }
+        &__picture {
+            max-width: 350px;
+        }
+        &__background {
+            margin-top: 20px;
+            max-width: 350px;
+            height: 400px;
+        }
     }
 }
