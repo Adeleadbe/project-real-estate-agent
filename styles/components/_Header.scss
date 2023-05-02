@@ -5,6 +5,9 @@
   justify-content: flex-end;
   align-items: flex-end;
   position: relative;
+  &__picture {
+    width: 530px;
+  }
 }
 
 .header__text {
@@ -35,30 +38,53 @@
   @include laptop {
     .header__text {
       h1 {
-        font-size: 30px;
+        font-size: 31px;
       }
       h2 {
-        font-size: 18px;
+        font-size: 19px;
       }
       &__quote { 
-        font-size: 18px;
+        font-size: 19px;
       }
     }
     .header__picture {
-      max-width: 400px;
+      max-width: 500px;
+    }
+  }
+
+  @include laptop_small {
+    .header__text {
+      left: 130px;
+      bottom: 120px;
+      h1 {
+        font-size: 29px;
+      }
+      h2 {
+        font-size: 17px;
+      }
+      &__quote { 
+        font-size: 17px;
+      }
+    }
+    .header__picture {
+      max-width: 470px;
     }
   }
 
   @include tablet {
     .header {
-      background-color: pink;
       position: static;
       flex-direction: column-reverse;
       align-items: center;
+      width: 85%;
+      margin: auto;
+      &__picture {
+        max-width: 40%;
+      }
       &__text {
         position: static;
-        img {
-          
+        &__presentation {
+          text-align: center;
         }
       }
     }

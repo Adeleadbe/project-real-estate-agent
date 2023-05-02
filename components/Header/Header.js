@@ -17,13 +17,8 @@ export default function Header({ image }) {
       <div className="header__picture">
           <Image
               src={image}
-              alt="l'agent immobilier Bryan Marlin"
-              width={433}
-              height={650}
-              style={{
-                  maxWidth: "100%",
-                  height: "auto"
-              }} />
+              alt="l'agent immobilier Bryan Marlin"             
+              layout="responsive" />
       </div>
   </div>
   </>;
